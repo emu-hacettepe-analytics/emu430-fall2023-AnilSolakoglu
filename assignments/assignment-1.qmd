@@ -67,3 +67,54 @@ or
 4)
 
 Output:9
+
+### 3) Indexing 
+R: Index start’s at 1 , includes last element 
+In R indexing starts at one and ends with the last element in the sequence included.
+
+{r}
+for (i in 1:10) {
+  print(i)
+}
+
+Output:
+[1] 1
+[1] 2
+[1] 3
+[1] 4
+[1] 5
+[1] 6
+[1] 7
+[1] 8
+[1] 9
+[1] 10
+
+Python: Index start's at 0 , doesn't include last element 
+In Python indexing starts at zero and ends without the last element number four functions i
+
+for i in range(10)
+    print(i) 
+
+Output:
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+
+
+
+
+
+
+
+
+
+
