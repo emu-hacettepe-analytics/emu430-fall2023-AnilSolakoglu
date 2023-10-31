@@ -22,4 +22,48 @@ https://youtu.be/EOjObl_GSi4?list=PL9HYL-VRX0oTOK4cpbCbRk15K2roEgzVW
 
 SUMMARY:The main topic in the video is easy big data manipulation with "disc.frame". The reason we need this operation is that when we are dealing with large data and R tries to load the data, the data is transferred to RAM. If the data size is larger than RAM can store, we get the error "Cannot allocate vectors of size". Basically, to solve this problem, we break the whole data set into smaller chunks without loading it into memory. ''Disk.frame'' is a folder containing many ''fst'' files. We convert the data to disc.frame by specifying the path to the CSV file with the function ''csv_to_disk.frame(path_to_cvs_file1, path_to_cvs_file2,..)''. We use dplyr verbs to process the data directly. With the srckeep function we specify which columns are loaded into memory, and with the filter, mutate, group, summarise and collect commands we have the possibility to collect the data we want from large data files. 
 
-## (b)
+## (b) Demonstrate and explain three differences between R and Python (e.g. coding style, syntax etc.) Include coding examples using code chunks.
+
+### 1) Coding Blocks / Conventions 
+R uses curly braces and parentheses. For example, if you want to use a for loop or an if statement, you must enclose the statement in parentheses and then open the curly braces to run the code. 
+
+{r}
+for (i in 1:5){
+   print("code block 1")
+   if (i > 3) {
+      print("code block 2")
+   }
+   print("code block 1 again")
+}
+
+Python on the other hand uses indentation and columns. The same R code would look like this:
+
+for i in range(5):
+   print("code block 1")
+   if i > 3:
+      print("code block 2")
+   print("code block 1 again")
+
+where the indentation is very important as the different indentation levels refer to different execution levels that is a loop or an if statement only affect the indented code not the non- indented code.
+
+### 2)Operation Spread
+R: Operation can be spread on multiple rows
+{r}
+2 + 3 + 
+  4
+
+output: [1] 9
+
+Python: Operation on multiple rows must be declered either usıng \ and ()
+
+2 + 3 + \
+4
+
+Output:9
+
+or
+
+(2 + 3 + 
+4)
+
+Output:9
