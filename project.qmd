@@ -3,10 +3,10 @@ title: "Our Course Project"
 sidebar: false 
 ---
 
-I'm honored to be a member of the \[group name\] project team.
+I'm honored to be a member of the 4k1e_rda project
 
-Below, you'll find a brief summary of our project. To access a detailed project description, please go to [https://\[your-project-url\]](#0){.uri}.
+Below, you'll find a brief summary of our project. To access a detailed project description, please go to <https://emu-hacettepe-analytics.github.io/emu430-fall2023-team-4k1e_rda/>
 
 **Summary**
 
-\[provide a biref summary of your project\]
+This Project presents an exploratory analysis of the types of crimes committed in Turkey between 2011 and 2020. A detailed analysis of crimes in different time periods in Turkey aims to understand crime trends and develop crime-fighting strategies.
